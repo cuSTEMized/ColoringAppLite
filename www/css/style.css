@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "Chalkboard";
+  src: url('../fonts/ChalkboardSE-Regular.ttf') format('truetype');
+}
+/* line 11, ../sass/partials/_base.scss */
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Chalkboard", Helvetica, Arial, sans-serif;
+}
+
+/* line 18, ../sass/partials/_base.scss */
+nav {
+  margin: 0px;
+  /*width: 76px;*/
+  padding: 6px;
+  height: 100%;
+  color: white;
+  background-image: url("../icons/wood_tile.jpg");
+  background-repeat: repeat-x repeat-y;
+  overflow: auto;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+/* line 35, ../sass/partials/_base.scss */
+nav.left {
+  border-right: 2px solid black;
+  left: 0;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 41, ../sass/partials/_base.scss */
+nav.right {
+  border-left: 2px solid black;
+  right: 0;
+  padding: 10px;
+  margin: 0px;
+}
+
+/* line 48, ../sass/partials/_base.scss */
+.btn,
+.btnhalf {
+  width: 64px;
+  height: 64px;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  cursor: pointer;
+  padding: 0px;
+}
+
+/* line 62, ../sass/partials/_base.scss */
+button {
+  text-align: center;
+  background-color: transparent;
+  margin: 10px 10px 10px 0px;
+  border: 0px;
+}
+
+/* Fullscreen */
+/* line 70, ../sass/partials/_base.scss */
+body.fullscreen {
+  overflow: hidden;
+}
+
+/* line 72, ../sass/partials/_base.scss */
+body.fullscreen article {
+  position: absolute;
+  overflow: hidden;
+  width: auto;
+  padding: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+/* line 82, ../sass/partials/_base.scss */
+body.fullscreen article .paperscript {
+  height: 100%;
+  margin-bottom: 0;
+}
+
+/* line 85, ../sass/partials/_base.scss */
+body.fullscreen article .canvas,
+body.fullscreen article canvas[resize] {
+  width: 100%;
+  height: 100%;
+}
+
+/* Color box */
+/* line 92, ../sass/partials/_base.scss */
+input {
+  visibility: hidden;
+  margin: 0px;
+  padding: 0px;
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+/* line 100, ../sass/partials/_base.scss */
+.colorBox {
+  border: 2px solid black;
+  float: left;
+  display: inline-block;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+/* line 107, ../sass/partials/_base.scss */
+#paletteBox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* line 112, ../sass/partials/_base.scss */
+#paletteBox input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* line 118, ../sass/partials/_base.scss */
+input:checked + .colorBox {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  border: 2px solid white;
+}
+
+/* line 125, ../sass/partials/_base.scss */
+article {
+  cursor: pointer;
+  /* position: relative; */
+  position: fixed;
+  /* padding: 0px 76px; */
+  z-index: 0;
+}
+
+/* line 1, ../sass/partials/_start.scss */
+.start {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/start.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 10, ../sass/partials/_start.scss */
+.start .nav-bar {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+/* line 17, ../sass/partials/_start.scss */
+.start .nav-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 22, ../sass/partials/_start.scss */
+.start .nav-item {
+  display: inline;
+  font-size: 1.5rem;
+}
+/* line 26, ../sass/partials/_start.scss */
+.start .nav-item #go {
+  background-color: #FDCA31;
+}
+/* line 30, ../sass/partials/_start.scss */
+.start .nav-item #about {
+  background-color: #F58765;
+}
+
+/* line 35, ../sass/partials/_start.scss */
+.start .title-text {
+  color: #FFF;
+  font-size: 2.5rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 1, ../sass/partials/_modal.scss */
+.modal {
+  border: 0.25rem solid #F58765;
+  border-radius: 1.5rem;
+  background: #FFCEBF;
+  display: none;
+  height: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  z-index: 10;
+}
+/* line 14, ../sass/partials/_modal.scss */
+.modal.modal-is-visible {
+  display: block;
+}
+
+/* line 19, ../sass/partials/_modal.scss */
+.cover {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(75, 75, 75, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+/* line 29, ../sass/partials/_modal.scss */
+.cover.modal-is-visible {
+  display: block;
+}
+
+/* line 34, ../sass/partials/_modal.scss */
+.modal-header {
+  background-color: #F58765;
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* line 39, ../sass/partials/_modal.scss */
+.modal-content {
+  max-height: 80%;
+  overflow: scroll;
+}
+
+/* line 44, ../sass/partials/_modal.scss */
+.modal-header, .modal-content {
+  padding: .5rem 1.5rem;
+  top: 0;
+}

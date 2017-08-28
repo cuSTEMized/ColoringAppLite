@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <!-- Cordova meta tags -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <!-- Stylesheets -->
+	<style>
+	 @font-face {
+	     font-family: "Chalkboard";
+	     src: url('fonts/ChalkboardSE-Regular.ttf') format('truetype');
+	 }
+	 html, body {
+	     height: 100%;
+	     width: 100%;
+	     padding: 0;
+	     margin: 0;
+	     font-family: "Chalkboard", Helvetica, Arial, sans-serif;
+	     font-size: 1.2em;
+	     background-image: url("icons/background.png");
+	     background-repeat: no-repeat;
+	     background-attachment: fixed;
+	     background-position: bottom; 
+	     -webkit-background-size: cover;
+	     -moz-background-size: cover;
+	     -o-background-size: cover;
+	     background-size: cover;
+	 }
+	 a {
+	     color: inherit; /* blue colors for links too */
+	     text-decoration: inherit; /* no underline */
+	 }
+	 .page {
+	     display: grid;
+	     
+	     grid-template-columns: 20% 60% 20%;
+	     grid-template-rows: 20% 60% 20%;
+	     grid-gap: 0px;
+	     
+	     height: 100%;
+	     width: 100%;
+
+	 }
+
+	 .box {
+	     padding: 30px;
+	 }
+	 
+	</style>
+
+        <title>Alphabet Animals</title>
+    </head>
+    <body>
+	<div class="page" align="center">
+
+	    <div class="box" style="grid-column: 1; grid-row: 2; z-index:1;">
+		<a href="about.html">
+		    <img src="icons/lightbulb.svg" width="100%"><br>
+		    <b>Learn</b>
+		</a>
+	    </div>
+	    <div class="box" style="grid-column: 2; grid-row: 1/4; justify-self: center; z-index:0">
+		<a href="navigation.html">
+		    <img src="icons/foreground.png" height="100%">
+		</a>
+	    </div>
+	    <div class="box" style="grid-column: 3; grid-row: 2; z-index:1;">
+		<a href="navigation.html">
+		    <img src="icons/color.svg" width="100%"><br>
+		    <b>Color</b>
+		</a>
+	    </div>
+	</div>
+    </body>
+</html>

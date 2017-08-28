@@ -1,0 +1,100 @@
+<html>
+    <head>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+	<style>
+	 @font-face {
+	     font-family: "Chalkboard";
+	     src: url('fonts/ChalkboardSE-Regular.ttf') format('truetype');
+	 }
+	 html, body {
+	     height: 100%;
+	     width: 100%;
+	     padding: 0;
+	     margin: 0;
+	     font-family: "Chalkboard", Helvetica, Arial, sans-serif;
+	     font-size: 1.2em;
+	     background-image: url("icons/background.png");
+	     background-repeat: no-repeat;
+	     background-attachment: fixed;
+	     background-position: center;
+	     -webkit-background-size: cover;
+	     -moz-background-size: cover;
+	     -o-background-size: cover;
+	     background-size: cover;
+	 }
+	 ul {
+	     list-style: none;
+	 }
+	 li {
+	     display: inline-block;
+	     margin-right: 15px;
+	 }
+	 input {
+	     visibility:hidden;
+	 }
+	 label {
+	     cursor: pointer;
+	 }
+	 .thumbnail {
+	     width: 25%;
+	     margin: 1%;
+	     border: 1px solid black;
+	     background: #ffffff;
+	 }
+	</style>
+
+	<title>Alphabet Animals - Navigation</title>
+    </head>
+
+    <body>
+	<div align="center" style="padding: 10px">
+	    <h1>
+		Select Your Coloring Page
+	    </h1>
+	    
+	    <div id="images">
+	    </div>
+	</div>
+    </body>
+    
+    <!-- inject images dynamically -->
+    <script>
+     var path = "img/";
+     var coloring_pages = [
+	 "alligator.svg",
+	 "bear.svg",
+	 "cat.svg",
+	 "deer.svg",
+	 "elephant.svg",
+	 "flamingo.svg",
+	 "giraffe.svg",
+	 "hippo.svg",
+	 "iguana.svg",
+	 "jellyfish.svg",
+	 "koala.svg",
+	 "lion.svg",
+	 "monkey.svg",
+	 "owl.svg",
+	 "turtle.svg",
+	 "whale.svg",
+	 "zebra.svg"		  
+     ];
+     var N = coloring_pages.length;
+     for (var i = 0; i < N; i++) {
+	 var url = path + coloring_pages[i]
+	 var image_string = "<label><input type='radio' name='selection' value=" + url + ">" + "<img src=" + url + " class='thumbnail' /></label>";
+	 document.getElementById('images').innerHTML = document.getElementById('images').innerHTML + image_string
+     }
+     
+     /*jslint sub: true, maxerr: 50, indent: 4, browser: true */
+     (function (global) {
+	 $('input:radio').on('click', function(e) {
+	     var val = e.currentTarget.value;
+	     global.localStorage.setItem("mySharedData", val);
+	     console.log(val);
+	     window.location.href = 'coloring.html';
+	 });
+     }(window));
+    </script>
+</html>
