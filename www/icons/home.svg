@@ -2,8 +2,11 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="64px" height="64px" viewBox="-499.5 500.5 64 64" enable-background="new -499.5 500.5 64 64" xml:space="preserve">
-<polygon fill="#21464F" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="-487.255,559.932 -472.775,559.932 
-	-472.775,543.592 -462.225,543.592 -462.225,559.932 -447.732,559.932 -447.732,536.414 -441.148,536.414 -467.508,505.068 
-	-493.852,536.414 -487.255,536.414 "/>
+	 width="128px" height="128px" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+<g>
+	
+		<circle style="fill:#F5CD2D;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" cx="64" cy="64.002" r="44.656"/>
+</g>
+<polygon style="fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;" points="43.386,90.932 59.274,90.932 59.274,73.004 
+	70.85,73.004 70.85,90.932 86.751,90.932 86.751,65.128 93.975,65.128 65.053,30.735 36.148,65.128 43.386,65.128 "/>
 </svg>

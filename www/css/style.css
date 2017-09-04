@@ -4,61 +4,63 @@
 }
 /* line 11, ../sass/partials/_base.scss */
 html, body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: "Chalkboard", Helvetica, Arial, sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Chalkboard", Helvetica, Arial, sans-serif;
+    background-color: white;
 }
 
 /* line 18, ../sass/partials/_base.scss */
 nav {
-  margin: 0px;
-  /*width: 76px;*/
-  padding: 6px;
-  height: 100%;
-  color: white;
-  background-image: url("../icons/wood_tile.jpg");
-  background-repeat: repeat-x repeat-y;
-  overflow: auto;
-  position: fixed;
-  overflow-x: hidden;
-  overflow-y: auto;
-  z-index: 1;
+    margin: 0px;
+    /*width: 76px;*/
+    //padding: 6px;
+    padding: 0px;
+    height: 100%;
+    background-image: url("../icons/wood_tile.jpg");
+    background-repeat: repeat-x repeat-y;
+    overflow: auto;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1;
 }
 
 /* line 35, ../sass/partials/_base.scss */
 nav.left {
-  border-right: 2px solid black;
-  left: 0;
-  padding: 0px;
-  margin: 0px;
+    border-right: 2px solid black;
+    left: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 /* line 41, ../sass/partials/_base.scss */
 nav.right {
-  border-left: 2px solid black;
-  right: 0;
-  padding: 10px;
-  margin: 0px;
+    border-left: 2px solid black;
+    right: 0;
+    padding: 10px;
+    margin: 0px;
 }
 
 /* line 48, ../sass/partials/_base.scss */
 .btn,
 .btnhalf {
-  width: 64px;
-  height: 64px;
-  -webkit-transition: all 100ms ease-in;
-  -moz-transition: all 100ms ease-in;
-  transition: all 100ms ease-in;
-  cursor: pointer;
-  padding: 0px;
+    width: 64px;
+    height: 64px;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
 }
 
 /* line 62, ../sass/partials/_base.scss */
 button {
   text-align: center;
   background-color: transparent;
-  margin: 10px 10px 10px 0px;
+    //margin: 10px 10px 10px 0px;
   border: 0px;
 }
 
@@ -107,11 +109,11 @@ input {
 
 /* line 100, ../sass/partials/_base.scss */
 .colorBox {
-  border: 2px solid black;
-  float: left;
-  display: inline-block;
-  border-radius: 25px;
-  margin: 5px;
+    border: 2px solid black;
+    float: left;
+    display: inline-block;
+    border-radius: 25px;
+    margin: 10px;
 }
 
 /* line 107, ../sass/partials/_base.scss */
