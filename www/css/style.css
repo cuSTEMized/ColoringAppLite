@@ -9,6 +9,8 @@ html, body {
     margin: 0;
     font-family: "Chalkboard", Helvetica, Arial, sans-serif;
     background-color: white;
+    
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 /* line 18, ../sass/partials/_base.scss */
